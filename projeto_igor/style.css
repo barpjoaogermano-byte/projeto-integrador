@@ -1,0 +1,315 @@
+:root {
+  /* Nova paleta: Mais quente, moderna e aconchegante */
+  --fundo-pagina: #F8F9FA;
+  --fundo-cartao: #FFFFFF;
+  --borda-suave: #E2E8F0;
+  
+  --texto-titulo: #0F172A; /* Azul marinho quase preto (alta constraste) */
+  --texto-corpo: #334155; /* Cinza chumbo suave (confortável para ler) */
+  --texto-mutado: #64748B;
+  
+  --cor-marca: #4338CA; /* Indigo vibrante (Passa confiança e modernidade) */
+  --cor-marca-hover: #3730A3;
+  --cor-destaque: #F59E0B; /* Laranja quente para detalhes */
+  --cor-fundo-destaque: #EEF2FF; /* Azul bem clarinho para fundos especiais */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--fundo-pagina);
+  color: var(--texto-corpo);
+  /* Outfit para modernidade, Inter para os textos densos */
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  padding: 2rem 1rem;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .menu-principal a {
+  font-family: 'Outfit', sans-serif;
+  color: var(--texto-titulo);
+}
+
+/* Acessibilidade (Mantida e melhorada visualmente) */
+.apenas-leitor-tela {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.focavel-leitor-tela:focus {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--cor-marca);
+  color: #ffffff;
+  z-index: 9999;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(67, 56, 202, 0.3);
+}
+
+:focus:not(:focus-visible) { outline: none; }
+:focus-visible { outline: 3px solid var(--cor-destaque); outline-offset: 4px; border-radius: 4px;}
+
+/* Layout base */
+.container-geral {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Mais respiro entre as seções */
+}
+
+/* Cartões universais */
+.cartao-conteudo {
+  background: var(--fundo-cartao);
+  border: 1px solid var(--borda-suave);
+  border-radius: 16px; /* Bordas mais arredondadas (amigáveis) */
+  padding: 2.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao-conteudo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Cabeçalho */
+.cabecalho-site {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 2px solid var(--borda-suave);
+}
+
+.area-logo h1 { 
+  font-size: 1.8rem; 
+  font-weight: 800;
+  color: var(--cor-marca); 
+  letter-spacing: -0.5px;
+}
+.area-logo span { 
+  font-size: 0.9rem; 
+  color: var(--texto-mutado);
+  font-weight: 500;
+}
+
+.menu-principal ul { display: flex; gap: 1rem; list-style: none; }
+.menu-principal a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.menu-principal a:hover { 
+  background: var(--cor-fundo-destaque);
+  color: var(--cor-marca); 
+}
+
+/* Destaque Inicial (Hero) */
+.secao-destaque {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--cor-fundo-destaque);
+  color: var(--cor-marca);
+  padding: 0.25rem 1rem;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.tag-pequena {
+  display: inline-block;
+  color: var(--cor-destaque);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.secao-destaque h2 { 
+  font-size: 2.8rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.secao-destaque p {
+  font-size: 1.15rem;
+  color: var(--texto-mutado);
+  margin-bottom: 2.5rem;
+}
+
+/* Botões */
+.botoes-acao {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.875rem 1.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+  transition: all 0.3s ease;
+  font-size: 1.05rem;
+}
+
+.btn-primario {
+  background: var(--cor-marca);
+  color: white;
+  box-shadow: 0 4px 6px rgba(67, 56, 202, 0.2);
+}
+
+.btn-primario:hover {
+  background: var(--cor-marca-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(67, 56, 202, 0.3);
+}
+
+.btn-secundario {
+  background: white;
+  color: var(--cor-marca);
+  border: 1px solid var(--cor-marca);
+}
+
+.btn-secundario:hover {
+  background: var(--cor-fundo-destaque);
+}
+
+/* Manifesto */
+.manifesto-inclusao {
+  text-align: center;
+  background: var(--cor-marca);
+  color: white;
+  border: none;
+}
+
+.manifesto-inclusao .manifesto-icone {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.manifesto-inclusao h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.manifesto-inclusao p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Cabeçalhos de Seção */
+.cabecalho-secao {
+  margin-bottom: 2rem;
+}
+.cabecalho-secao.centralizado {
+  text-align: center;
+}
+.cabecalho-secao h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.cabecalho-secao p {
+  color: var(--texto-mutado);
+  font-size: 1.1rem;
+}
+
+/* Seção Alternada */
+.secao-funcionalidades {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.linha-funcionalidade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 0; /* Tira o padding padrão do cartão */
+  overflow: hidden; /* Para a imagem respeitar o border-radius */
+}
+
+.texto-funcionalidade {
+  padding: 2.5rem;
+}
+
+.texto-funcionalidade h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.imagem-funcionalidade {
+  height: 100%;
+  min-height: 300px;
+}
+
+.imagem-funcionalidade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Imagem fica linda preenchendo o espaço */
+  display: block;
+}
+
+/* Mídias */
+.bloco-midias-empilhado {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.item-midia {
+  background: var(--fundo-cartao);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid var(--borda-suave);
+}
+
+.cabecalho-midia h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--cor-marca);
+}
+
+.reprodutor-midia {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
