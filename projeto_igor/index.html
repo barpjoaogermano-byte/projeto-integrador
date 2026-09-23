@@ -3,30 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portal sobre Tecnologia, Inteligência Artificial e Inclusão Digital focado em pessoas.">
-  <title>Tecnologia com Empatia | Inclusão Digital</title>
-  
-  <!-- Fontes mais humanas e modernas -->
+  <meta name="description" content="Ponte Digital — tecnologia, inteligência artificial e acessibilidade para todos.">
+  <title>Ponte Digital | Tecnologia com Empatia</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Atalho de acessibilidade para leitor de tela / teclado -->
-  <a href="#conteudo-principal" class="apenas-leitor-tela focavel-leitor-tela">Pular direto pro conteúdo</a>
+  <a href="#conteudo-principal" class="apenas-leitor-tela focavel-leitor-tela">
+    Pular direto para o conteúdo
+  </a>
 
   <div class="container-geral">
-    
-    <header class="cabecalho-site">
-      <div class="area-logo">
-        <h1>TechInclusiva</h1>
-        <span>O digital feito para todos nós</span>
-      </div>
 
-      <nav class="menu-principal">
+    <header class="cabecalho-site">
+      <a href="#inicio" class="area-logo">
+        <h1>Ponte Digital</h1>
+        <span>O digital feito para todos nós</span>
+      </a>
+
+      <nav class="menu-principal" aria-label="Menu principal">
         <ul>
           <li><a href="#inicio">Início</a></li>
           <li><a href="#manifesto">Manifesto</a></li>
@@ -36,126 +35,283 @@
       </nav>
     </header>
 
-    <section id="inicio" class="secao-destaque">
-      <div class="destaque-texto">
-        <span class="tag">Nosso Propósito</span>
-        <h2>A tecnologia só faz sentido se não deixar ninguém para trás.</h2>
-        <p>Acreditamos que cada linha de código deve considerar diferentes formas de enxergar, ouvir, mover e sentir o mundo. Por trás das telas, existem pessoas. E a web deve ser a casa de todas elas.</p>
-        <div class="botoes-acao">
-          <a href="#manifesto" class="btn btn-primario">Conheça nossa causa</a>
-          <a href="#impacto" class="btn btn-secundario">Ver histórias reais</a>
-        </div>
-      </div>
-    </section>
-
     <main id="conteudo-principal">
-      
-      <!-- SEÇÃO: MANIFESTO -->
-      <section id="manifesto" class="cartao-conteudo manifesto-inclusao">
-        <div class="manifesto-icone">❤️</div>
-        <h3>Construindo pontes, não barreiras</h3>
-        <p>A exclusão digital não é um acidente, ela é uma falha de design. Quando usamos a Inteligência Artificial, nosso papel não é substituir o afeto humano, mas amplificá-lo. Queremos criar ferramentas que traduzam o silêncio, descrevam as cores e abracem a diversidade da mente humana.</p>
+
+      <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-conteudo">
+          <span class="tag">TECNOLOGIA • ACESSIBILIDADE • INCLUSÃO</span>
+
+          <h2>O futuro da tecnologia precisa ser acessível para todos.</h2>
+
+          <p>
+            A tecnologia pode aproximar pessoas, quebrar barreiras e criar
+            novas possibilidades. O futuro digital começa quando ninguém
+            fica para trás.
+          </p>
+
+          <div class="botoes-acao">
+            <a href="#manifesto" class="btn btn-primario">Conheça nossa causa</a>
+            <a href="#impacto" class="btn btn-secundario">Explorar conteúdo</a>
+          </div>
+        </div>
       </section>
 
-      <!-- SEÇÃO ALTERNADA: (TEXTO / IMAGEM) -->
-      <section id="impacto" class="secao-funcionalidades">
+      <section id="manifesto" class="manifesto">
+        <div class="manifesto-conteudo">
+          <span class="numero-secao">01</span>
+
+          <div>
+            <span class="tag-pequena">NOSSO MANIFESTO</span>
+            <h3>Construindo pontes, não barreiras.</h3>
+
+            <p>
+              A tecnologia está presente em praticamente todos os momentos
+              da nossa vida. Por isso, ela precisa ser pensada para pessoas
+              com diferentes formas de enxergar, ouvir, se comunicar e
+              interagir com o mundo.
+            </p>
+
+            <p>
+              A Inteligência Artificial pode ajudar nesse processo, criando
+              ferramentas capazes de ampliar a autonomia e tornar o ambiente
+              digital mais acessível.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="impacto" class="impacto">
         <div class="cabecalho-secao">
+          <span class="tag-pequena">TECNOLOGIA NA PRÁTICA</span>
           <h3>Como a IA está mudando vidas</h3>
-          <p>Exemplos reais de como a união entre empatia e algoritmo transforma o cotidiano.</p>
+          <p>
+            A inteligência artificial já pode ser utilizada para facilitar
+            tarefas, melhorar a comunicação e ampliar a acessibilidade.
+          </p>
         </div>
 
-        <!-- BLOCO 1 (Texto / Imagem) -->
-        <div class="cartao-conteudo linha-funcionalidade">
-          <div class="texto-funcionalidade">
-            <span class="tag-pequena">Autonomia</span>
-            <h4>Ouvindo o mundo através da câmera</h4>
-            <p>Imagine apontar o celular para a rua e uma voz amigável descrever: "Seu ônibus está chegando" ou "Sua amiga Maria está sorrindo para você". Ferramentas de IA generativa já estão devolvendo autonomia e independência para milhares de pessoas com deficiência visual todos os dias.</p>
+        <article class="bloco-conteudo">
+          <figure class="imagem-conteudo">
+            <img src="./assets/img1.jpg" alt="Mulher usando fones de ouvido enquanto caminha pela cidade utilizando tecnologia.">
+          </figure>
+
+          <div class="texto-conteudo">
+            <span class="numero-conteudo">01</span>
+            <span class="tag-pequena">AUTONOMIA</span>
+            <h4>Tecnologia que ajuda a enxergar o mundo</h4>
+            <p>
+              Aplicativos com Inteligência Artificial podem utilizar a câmera
+              do celular para reconhecer objetos, pessoas, textos e ambientes.
+              Para pessoas com deficiência visual, essas ferramentas podem
+              facilitar tarefas do cotidiano e aumentar a independência.
+            </p>
+            <p class="frase-destaque">
+              A câmera do celular pode se transformar em uma ferramenta
+              de apoio para quem precisa de informações sobre o ambiente.
+            </p>
           </div>
-          <figure class="imagem-funcionalidade">
-            <img src="./assets/img1.jpg" alt="Mulher sorridente com fones de ouvido caminhando pela cidade, usando tecnologia assistiva.">
-          </figure>
-        </div>
+        </article>
 
-        <!-- BLOCO 2 (Imagem / Texto - Invertido) -->
-        <div class="cartao-conteudo linha-funcionalidade invertido">
-          <figure class="imagem-funcionalidade">
-            <img src="./assets/img2.jpg" alt="Grupo diversificado de jovens trabalhando juntos de forma colaborativa e sorrindo.">
+        <article class="bloco-conteudo invertido">
+          <figure class="imagem-conteudo">
+            <img src="./assets/img2.jpg" alt="Grupo diverso de jovens trabalhando juntos em um ambiente colaborativo.">
           </figure>
-          <div class="texto-funcionalidade">
-            <span class="tag-pequena">Diversidade</span>
+
+          <div class="texto-conteudo">
+            <span class="numero-conteudo">02</span>
+            <span class="tag-pequena">DIVERSIDADE</span>
             <h4>Quem ensina as máquinas a pensar?</h4>
-            <p>A IA aprende com o que mostramos a ela. Se não tivermos pessoas negras, mulheres, pessoas com deficiência e diferentes culturas nas equipes de programação, corremos o risco de ensinar nossos preconceitos às máquinas. A inclusão começa muito antes de o código ir para o ar: ela começa na contratação.</p>
+            <p>
+              A Inteligência Artificial aprende a partir dos dados utilizados
+              durante seu desenvolvimento. Por isso, diferentes experiências
+              precisam estar presentes na criação dessas tecnologias.
+            </p>
+            <p class="frase-destaque">
+              Quanto mais experiências diferentes são consideradas,
+              mais possibilidades podem ser percebidas.
+            </p>
           </div>
-        </div>
+        </article>
 
-        <!-- BLOCO 3 (Texto / Imagem - NOVO) -->
-        <div class="cartao-conteudo linha-funcionalidade">
-          <div class="texto-funcionalidade">
-            <span class="tag-pequena">Acessibilidade</span>
-            <h4>Quebrando as barreiras da comunicação</h4>
-            <p>Tradução em tempo real, geração de legendas dinâmicas e avatares que traduzem texto para Libras. A Inteligência Artificial está transformando a comunicação digital, garantindo que todas as vozes sejam ouvidas, não importa como a pessoa escolha se expressar.</p>
-          </div>
-          <figure class="imagem-funcionalidade">
-            <!-- Nova imagem focada em tecnologia e comunicação -->
-            <img src="./assets/img3.jpg" alt="Pessoa interagindo com um tablet com foco na tela, representando o acesso facilitado à comunicação.">
+        <article class="bloco-conteudo">
+          <figure class="imagem-conteudo">
+            <img src="./assets/img3.jpg" alt="Pessoa utilizando um tablet para acessar recursos digitais de comunicação.">
           </figure>
-        </div>
 
+          <div class="texto-conteudo">
+            <span class="numero-conteudo">03</span>
+            <span class="tag-pequena">ACESSIBILIDADE</span>
+            <h4>Quebrando barreiras na comunicação</h4>
+            <p>
+              Legendas automáticas, tradução em tempo real, leitores de tela
+              e ferramentas de apoio podem tornar a comunicação digital
+              mais acessível para diferentes pessoas.
+            </p>
+            <p class="frase-destaque">
+              Acessibilidade significa oferecer diferentes caminhos para
+              que todos possam participar.
+            </p>
+          </div>
+        </article>
       </section>
 
-      <!-- SEÇÃO MÍDIAS: EMPILHADA COM DIVISÓRIA -->
-      <section id="midias" class="cartao-conteudo bloco-midias-empilhado">
-        <div class="cabecalho-secao centralizado">
+      <section id="midias" class="midias">
+        <div class="cabecalho-secao">
+          <span class="tag-pequena">CONTEÚDO MULTIMÍDIA</span>
           <h3>Vozes da Inclusão</h3>
-          <p>Escute e veja quem está fazendo a diferença agora.</p>
+          <p>
+            Conteúdos para conhecer melhor a relação entre tecnologia,
+            acessibilidade e inclusão.
+          </p>
         </div>
-        
-        <!-- VÍDEO + TRANSCRIÇÃO -->
-        <div class="item-midia">
-          <div class="cabecalho-midia">
-            <h4>▶️ Documentário: O Futuro é Acessível</h4>
+
+        <article class="midia">
+          <div class="midia-info">
+            <span class="numero-conteudo">01</span>
+            <div>
+              <h4>Documentário: O Futuro é Acessível</h4>
+              <p>
+                Um conteúdo sobre como a tecnologia pode ajudar pessoas
+                com diferentes necessidades.
+              </p>
+            </div>
           </div>
-          <video controls class="reprodutor-midia" poster="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80">
-            <source src="#" type="video/mp4">
+
+          <video controls class="reprodutor-midia" poster="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80">
+            <source src="./assets/video.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
           </video>
 
           <details class="painel-transcricao">
-            <summary>Ler transcrição do vídeo</summary>
+            <summary>
+              <span>▶</span>
+              Ver transcrição do vídeo
+            </summary>
             <div class="corpo-transcricao">
-              <p><strong>[Música suave e inspiradora começa]</strong></p>
-              <p><strong>[Visual]</strong> Um jovem cego toca a tela do celular; a tela brilha e um aplicativo responde por voz.</p>
-              <p><strong>[Voz de Marina, Desenvolvedora]</strong> "Quando nós construímos algo acessível, não estamos fazendo um 'favor'. Estamos garantindo um direito humano fundamental."</p>
+              <p><strong>[Narrador]</strong> Você já parou pra pensar que, enquanto alguns estão usando inteligência artificial pra criar empresas, automatizar processos e até gerar renda, milhões de pessoas sequer conseguem acessar ferramentas básicas? Pois é, e a IA tá começando a mudar isso de um jeito que muita gente nem imagina. Se esse tema te interessa, já deixa seu like, se inscreve no canal e ativa o sininho, porque aqui você fica por dentro de tudo sobre IA, tecnologia e desenvolvimento.[cite: 1]</p>
+              <p><strong>[Narrador]</strong> A inteligência artificial não tá só revolucionando empresas e negócios, ela tá quebrando barreiras gigantes na inclusão digital. Hoje eu vou te mostrar como a IA tá ajudando pessoas com deficiência, idosos e até quem nunca teve acesso à tecnologia a finalmente se conectar com o mundo digital. E o mais louco: talvez você nem saiba que já usa algumas dessas ferramentas no seu dia a dia.[cite: 1]</p>
+              <p><strong>[Narrador]</strong> O que é inclusão digital na prática? Incluir digitalmente não é só dar acesso à internet. É garantir que qualquer pessoa, independente de idade, renda, deficiência física, visual, auditiva ou cognitiva, consiga usar a tecnologia de forma simples, acessível e funcional. E é aqui que a Inteligência Artificial tá fazendo uma revolução silenciosa, mas muito poderosa.[cite: 1]</p>
+              <p><strong>[Narrador]</strong> Como a IA transforma a acessibilidade? A IA hoje já é capaz de gerar legendas automáticas em vídeos. Você já percebeu que quando ativa a legenda no YouTube ela aparece até quando não tem legenda oficial? Isso é IA em ação, ajudando pessoas com deficiência auditiva. Leitores de tela inteligentes. Ferramentas como VoiceOver, NVDA e Jaws usam IA para descrever imagens, ler textos e até interpretar contextos em tempo real para pessoas cegas. Reconhecimento de voz avançado. A Alexa, Siri, Google Assistente e vários outros assistentes hoje entendem sotaques, gírias e até comandos complexos. Isso não era possível há alguns anos. Tradução em tempo real. Softwares como Google Tradutor e até o próprio Zoom usam IA para quebrar barreiras de idioma, facilitando reuniões, aulas e comunicação global. Geração de conteúdo acessível. Softwares que criam resumos de textos, adaptam conteúdos para linguagem simples e até convertem texto em áudio.[cite: 1]</p>
+              <p><strong>[Narrador]</strong> IA e desigualdade digital. Ainda é um desafio. Apesar dos avanços, a inclusão digital ainda é um problema sério. Segundo dados da ONU, mais de 2,7 bilhões de pessoas no mundo ainda estão desconectadas da internet. Mas a IA, combinada com educação digital e infraestrutura acessível, tá sendo vista como uma das maiores aliadas pra mudar esse cenário nos próximos anos.[cite: 1]</p>
+              <p><strong>[Narrador]</strong> E aqui vai uma dica para você que é dev, criador ou empreendedor. Se você desenvolve sites, apps ou qualquer solução digital, pense na acessibilidade desde o começo. Usar IA pra criar experiências mais inclusivas não é só responsabilidade social, é também uma oportunidade de alcançar muito mais pessoas. Aliás, se você quer criar seu próprio site, blog ou até uma plataforma acessível, a Hostinger te dá todas as ferramentas, hospedagem super rápida e suporte incrível. E olha, tem um desconto especial para quem acessar pelo link que está na descrição, hein? Mas é por tempo limitado, hein.[cite: 1]</p>
+              <p><strong>[Narrador]</strong> Se esse vídeo fez sentido pra você, deixa aquele like, comenta aqui embaixo o que você acha sobre a IA na inclusão digital e compartilha com alguém que precisa saber disso. E se inscreve no canal, porque toda semana tem vídeo novo sobre IA, tecnologia e tendências que vão transformar o seu jeito de trabalhar e viver. A tecnologia só faz sentido se ela for pra todo mundo.[cite: 1]</p>
             </div>
           </details>
-        </div>
+        </article>
 
-        <hr class="linha-divisoria">
-
-        <!-- PODCAST + TRANSCRIÇÃO -->
-        <div class="item-midia">
-          <div class="cabecalho-midia">
-            <h4>🎧 Podcast: Empatia Digital (Ep. 12)</h4>
+        <!-- ÁREA DO PODCAST DESTACADA E ESTILIZADA -->
+        <article class="midia midia-podcast">
+          <div class="podcast-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
+              <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
+            </svg>
+            PODCAST EXCLUSIVO
           </div>
-          <audio controls class="reprodutor-midia audio-player">
-            <source src="#" type="audio/mpeg">
-            Seu navegador não suporta o elemento de áudio.
-          </audio>
 
-          <details class="painel-transcricao">
-            <summary>Ler transcrição do podcast</summary>
+          <div class="midia-info">
+            <span class="numero-conteudo podcast-num">02</span>
+            <div>
+              <h4>Podcast: Empatia Digital</h4>
+              <p>
+                Uma conversa sobre pequenas mudanças que podem melhorar
+                a experiência de quem utiliza um site.
+              </p>
+            </div>
+          </div>
+
+          <div class="container-audio-podcast">
+            <audio controls class="reprodutor-midia reprodutor-podcast">
+              <source src="./assets/Muros_e_Pontes.mp3" type="audio/mpeg">
+              Seu navegador não suporta o elemento de áudio.
+            </audio>
+          </div>
+
+          <details class="painel-transcricao painel-podcast">
+            <summary>
+              <span>▶</span>
+              Ver transcrição do podcast
+            </summary>
             <div class="corpo-transcricao">
-              <p><strong>[Apresentadora]</strong> Bem-vindos de volta. Hoje vamos falar sobre como pequenas mudanças no código geram impactos gigantescos.</p>
-              <p><strong>[Convidado]</strong> Exato! Comece testando seu site apenas com o teclado. Se você não consegue navegar, uma pessoa com deficiência motora também não vai conseguir.</p>
+              <p><strong>[Host Ana]</strong> Então eu estava lendo sobre como a IA está sendo usada em processos de contratação e fiquei pensando... A gente fala muito sobre eficiência, mas e a inclusão nessa história?</p>
+              <p><strong>[Host Bibeto]</strong> Pois é, Ana. O problema é que a gente tende a achar que a máquina é neutra, né? Que o código não tem preconceito, mas o código é feito por humanos baseado em dados que a gente mesmo produziu. Se o banco de dados tem viés histórico, o algoritmo vai simplesmente aprender e repetir isso, só que numa escala muito maior e às vezes mais rápida. É como se a tecnologia desse uma roupagem de imparcialidade para um preconceito antigo. E isso é perigoso, a gente vê isso claramente no reconhecimento facial. Tem sistemas que erram muito mais com pessoas negras do que com brancas. Como é que a gente chama isso de avanço tecnológico se, na prática, a ferramenta exclui uma parcela enorme da população?</p>
+              <p><strong>[Host Ana]</strong> É uma questão de design.</p>
+              <p><strong>[Host Bibeto]</strong> A diversidade não pode ser um extra no final do projeto, tem que estar na base da concepção. Quem tá criando esse sistema? Que tipo de vida essa pessoa conhece? Se a equipe de desenvolvimento for homogênea, a visão de mundo dela também vai ser. E tem outro ponto: a acessibilidade.</p>
+              <p><strong>[Host Ana]</strong> A gente fala de IA, de realidade aumentada, mas muitos sites básicos ainda não são acessíveis para uma pessoa cega ou com deficiência motora.</p>
+              <p><strong>[Host Bibeto]</strong> A gente cria essas maravilhas digitais e no processo acaba erguendo novos muros.</p>
+              <p><strong>[Host Ana]</strong> E aí vira uma exclusão técnica, né? A pessoa não consegue nem entrar na fila da cidadania digital porque a interface não conversa com a tecnologia assistiva que ela usa.</p>
+              <p><strong>[Host Bibeto]</strong> Exato. A tecnologia deveria ser um equalizador, uma ferramenta que dá autonomia, mas sem um compromisso ético e sem políticas públicas que forcem esse padrão de acessibilidade, acaba se transformando em mais um fator de exclusão. É por isso que a educação é a chave. Não adianta só ensinar a programar, tem que ensinar a refletir sobre o impacto social daquilo que você tá programando.</p>
+              <p><strong>[Host Ana]</strong> Tecnologia é sobre pessoas, não só sobre máquinas. Se a gente não colocar o humano no centro dessa conversa, a gente tá só replicando os erros do passado com uma velocidade maior.</p>
             </div>
           </details>
-        </div>
+        </article>
+      </section>
 
+      <section class="chamada-final">
+        <span class="tag">FAÇA PARTE DA MUDANÇA</span>
+        <h2>A acessibilidade começa no momento em que pensamos em todos.</h2>
+        <p>
+          Pequenas mudanças na tecnologia podem criar experiências
+          melhores, mais humanas e mais inclusivas.
+        </p>
+        <a href="#inicio" class="btn btn-primario">Voltar ao início</a>
       </section>
 
     </main>
 
-    <section class="chamada-final">
-      <h2>Vamos tornar a web um lugar melhor?</h2>
-      <p>Pequenas atitudes criam grandes mudanças. Aprenda mais sobre acessibilidade digital.</p>
-    </section>
+    <footer class="rodape-site">
+      <div class="footer-conteudo">
+        <div class="footer-marca">
+          <h2>Ponte Digital</h2>
+          <p>
+            Tecnologia, inteligência artificial e acessibilidade
+            para construir um futuro mais inclusivo.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h3>Navegação</h3>
+          <a href="#inicio">Início</a>
+          <a href="#manifesto">Manifesto</a>
+          <a href="#impacto">Impacto da IA</a>
+          <a href="#midias">Vozes</a>
+        </div>
+
+        <!-- NOVA SEÇÃO DE DESENVOLVEDORES COM OS GITHUBS -->
+        <div class="footer-links">
+          <h3>Desenvolvedores</h3>
+          <a href="https://github.com/barpjoaogermano-byte" target="_blank" rel="noopener noreferrer" class="github-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            João Germano
+          </a>
+          <a href="https://github.com/arturvalentim" target="_blank" rel="noopener noreferrer" class="github-link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            Artur Valentim
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <h3>Sobre o projeto</h3>
+          <p>
+            Projeto desenvolvido com foco em tecnologia,
+            inclusão e acessibilidade digital.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Ponte Digital. Feito com empatia e acessibilidade.</p>
+        <a href="#inicio">Voltar ao topo ↑</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
