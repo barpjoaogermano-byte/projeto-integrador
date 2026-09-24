@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ponte Digital — tecnologia, inteligência artificial e acessibilidade para todos.">
-  <title>Ponte Digital | Tecnologia com Empatia</title>
+  <meta name="description" content="Ponte Digital — tecnologia, inteligência artificial e acessibilidade para pessoas cegas e com deficiência visual.">
+  <title>Ponte Digital | Tecnologia e Acessibilidade Visual</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +13,7 @@
 </head>
 <body>
 
+  <!-- LINK DE ATALHO PARA LEITORES DE TELA -->
   <a href="#conteudo-principal" class="apenas-leitor-tela focavel-leitor-tela">
     Pular direto para o conteúdo
   </a>
@@ -31,29 +32,33 @@
           <li><a href="#manifesto">Manifesto</a></li>
           <li><a href="#impacto">Impacto da IA</a></li>
           <li><a href="#midias">Vozes</a></li>
+          <li>
+            <button type="button" class="btn-qrcode" id="btn-abrir-qrcode" aria-expanded="false" aria-controls="modal-qrcode">
+              QR Code
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main id="conteudo-principal">
 
+      <!-- HERO FOCADO EM PESSOAS CEGAS -->
       <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
 
         <div class="hero-conteudo">
-          <span class="tag">TECNOLOGIA • ACESSIBILIDADE • INCLUSÃO</span>
+          <span class="tag">AUTONOMIA • LEITORES DE TELA • INCLUSÃO</span>
 
-          <h2>O futuro da tecnologia precisa ser acessível para todos.</h2>
+          <h2>A tecnologia transformando a forma de enxergar e viver o mundo.</h2>
 
           <p>
-            A tecnologia pode aproximar pessoas, quebrar barreiras e criar
-            novas possibilidades. O futuro digital começa quando ninguém
-            fica para trás.
+            Para pessoas cegas, a Inteligência Artificial e a acessibilidade digital não são apenas conveniências — são ferramentas essenciais que traduzem imagens em palavras, promovem autonomia no dia a dia e garantem o direito de navegar em igualdade.
           </p>
 
           <div class="botoes-acao">
-            <a href="#manifesto" class="btn btn-primario">Conheça nossa causa</a>
-            <a href="#impacto" class="btn btn-secundario">Explorar conteúdo</a>
+            <a href="#impacto" class="btn btn-primario">Ver tecnologias assistivas</a>
+            <a href="#manifesto" class="btn btn-secundario">Conheça nosso manifesto</a>
           </div>
         </div>
       </section>
@@ -94,7 +99,7 @@
 
         <article class="bloco-conteudo">
           <figure class="imagem-conteudo">
-            <img src="./assets/img1.jpg" alt="Mulher usando fones de ouvido enquanto caminha pela cidade utilizando tecnologia.">
+            <img src="./assets/img1.jpg" alt="Mulher usando fones de ouvido enquanto caminha pela cidade utilizando tecnologia de assistência em seu celular.">
           </figure>
 
           <div class="texto-conteudo">
@@ -116,7 +121,7 @@
 
         <article class="bloco-conteudo invertido">
           <figure class="imagem-conteudo">
-            <img src="./assets/img2.jpg" alt="Grupo diverso de jovens trabalhando juntos em um ambiente colaborativo.">
+            <img src="./assets/img2.jpg" alt="Grupo diverso de jovens trabalhando juntos em um ambiente colaborativo e acessível.">
           </figure>
 
           <div class="texto-conteudo">
@@ -137,7 +142,7 @@
 
         <article class="bloco-conteudo">
           <figure class="imagem-conteudo">
-            <img src="./assets/img3.jpg" alt="Pessoa utilizando um tablet para acessar recursos digitais de comunicação.">
+            <img src="./assets/img3.jpg" alt="Pessoa utilizando um tablet para acessar recursos digitais de comunicação adaptados.">
           </figure>
 
           <div class="texto-conteudo">
@@ -179,8 +184,9 @@
             </div>
           </div>
 
-          <video controls class="reprodutor-midia" poster="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80">
+          <video controls class="reprodutor-midia" poster="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" aria-label="Documentário O Futuro é Acessível">
             <source src="./assets/video.mp4" type="video/mp4">
+            <track kind="captions" src="./assets/legendas.vtt" srclang="pt" label="Português" default>
             Seu navegador não suporta o elemento de vídeo.
           </video>
 
@@ -190,21 +196,21 @@
               Ver transcrição do vídeo
             </summary>
             <div class="corpo-transcricao">
-              <p><strong>[Narrador]</strong> Você já parou pra pensar que, enquanto alguns estão usando inteligência artificial pra criar empresas, automatizar processos e até gerar renda, milhões de pessoas sequer conseguem acessar ferramentas básicas? Pois é, e a IA tá começando a mudar isso de um jeito que muita gente nem imagina. Se esse tema te interessa, já deixa seu like, se inscreve no canal e ativa o sininho, porque aqui você fica por dentro de tudo sobre IA, tecnologia e desenvolvimento.[cite: 1]</p>
-              <p><strong>[Narrador]</strong> A inteligência artificial não tá só revolucionando empresas e negócios, ela tá quebrando barreiras gigantes na inclusão digital. Hoje eu vou te mostrar como a IA tá ajudando pessoas com deficiência, idosos e até quem nunca teve acesso à tecnologia a finalmente se conectar com o mundo digital. E o mais louco: talvez você nem saiba que já usa algumas dessas ferramentas no seu dia a dia.[cite: 1]</p>
-              <p><strong>[Narrador]</strong> O que é inclusão digital na prática? Incluir digitalmente não é só dar acesso à internet. É garantir que qualquer pessoa, independente de idade, renda, deficiência física, visual, auditiva ou cognitiva, consiga usar a tecnologia de forma simples, acessível e funcional. E é aqui que a Inteligência Artificial tá fazendo uma revolução silenciosa, mas muito poderosa.[cite: 1]</p>
-              <p><strong>[Narrador]</strong> Como a IA transforma a acessibilidade? A IA hoje já é capaz de gerar legendas automáticas em vídeos. Você já percebeu que quando ativa a legenda no YouTube ela aparece até quando não tem legenda oficial? Isso é IA em ação, ajudando pessoas com deficiência auditiva. Leitores de tela inteligentes. Ferramentas como VoiceOver, NVDA e Jaws usam IA para descrever imagens, ler textos e até interpretar contextos em tempo real para pessoas cegas. Reconhecimento de voz avançado. A Alexa, Siri, Google Assistente e vários outros assistentes hoje entendem sotaques, gírias e até comandos complexos. Isso não era possível há alguns anos. Tradução em tempo real. Softwares como Google Tradutor e até o próprio Zoom usam IA para quebrar barreiras de idioma, facilitando reuniões, aulas e comunicação global. Geração de conteúdo acessível. Softwares que criam resumos de textos, adaptam conteúdos para linguagem simples e até convertem texto em áudio.[cite: 1]</p>
-              <p><strong>[Narrador]</strong> IA e desigualdade digital. Ainda é um desafio. Apesar dos avanços, a inclusão digital ainda é um problema sério. Segundo dados da ONU, mais de 2,7 bilhões de pessoas no mundo ainda estão desconectadas da internet. Mas a IA, combinada com educação digital e infraestrutura acessível, tá sendo vista como uma das maiores aliadas pra mudar esse cenário nos próximos anos.[cite: 1]</p>
-              <p><strong>[Narrador]</strong> E aqui vai uma dica para você que é dev, criador ou empreendedor. Se você desenvolve sites, apps ou qualquer solução digital, pense na acessibilidade desde o começo. Usar IA pra criar experiências mais inclusivas não é só responsabilidade social, é também uma oportunidade de alcançar muito mais pessoas. Aliás, se você quer criar seu próprio site, blog ou até uma plataforma acessível, a Hostinger te dá todas as ferramentas, hospedagem super rápida e suporte incrível. E olha, tem um desconto especial para quem acessar pelo link que está na descrição, hein? Mas é por tempo limitado, hein.[cite: 1]</p>
-              <p><strong>[Narrador]</strong> Se esse vídeo fez sentido pra você, deixa aquele like, comenta aqui embaixo o que você acha sobre a IA na inclusão digital e compartilha com alguém que precisa saber disso. E se inscreve no canal, porque toda semana tem vídeo novo sobre IA, tecnologia e tendências que vão transformar o seu jeito de trabalhar e viver. A tecnologia só faz sentido se ela for pra todo mundo.[cite: 1]</p>
+              <p><strong>[Narrador]</strong> Você já parou pra pensar que, enquanto alguns estão usando inteligência artificial pra criar empresas, automatizar processos e até gerar renda, milhões de pessoas sequer conseguem acessar ferramentas básicas? Pois é, e a IA tá começando a mudar isso de um jeito que muita gente nem imagina. Se esse tema te interessa, já deixa seu like, se inscreve no canal e ativa o sininho, porque aqui você fica por dentro de tudo sobre IA, tecnologia e desenvolvimento.</p>
+              <p><strong>[Narrador]</strong> A inteligência artificial não tá só revolucionando empresas e negócios, ela tá quebrando barreiras gigantes na inclusão digital. Hoje eu vou te mostrar como a IA tá ajudando pessoas com deficiência, idosos e até quem nunca teve acesso à tecnologia a finalmente se conectar com o mundo digital. E o mais louco: talvez você nem saiba que já usa algumas dessas ferramentas no seu dia a dia.</p>
+              <p><strong>[Narrador]</strong> O que é inclusão digital na prática? Incluir digitalmente não é só dar acesso à internet. É garantir que qualquer pessoa, independente de idade, renda, deficiência física, visual, auditiva ou cognitiva, consiga usar a tecnologia de forma simples, acessível e funcional. E é aqui que a Inteligência Artificial tá fazendo uma revolução silenciosa, mas muito poderosa.</p>
+              <p><strong>[Narrador]</strong> Como a IA transforma a acessibilidade? A IA hoje já é capaz de gerar legendas automáticas em vídeos. Você já percebeu que quando ativa a legenda no YouTube ela aparece até quando não tem legenda oficial? Isso é IA em ação, ajudando pessoas com deficiência auditiva. Leitores de tela inteligentes. Ferramentas como VoiceOver, NVDA e Jaws usam IA para descrever imagens, ler textos e até interpretar contextos em tempo real para pessoas cegas. Reconhecimento de voz avançado. A Alexa, Siri, Google Assistente e vários outros assistentes hoje entendem sotaques, gírias e até comandos complexos. Isso não era possível há alguns anos. Tradução em tempo real. Softwares como Google Tradutor e até o próprio Zoom usam IA para quebrar barreiras de idioma, facilitando reuniões, aulas e comunicação global. Geração de conteúdo acessível. Softwares que criam resumos de textos, adaptam conteúdos para linguagem simples e até convertem texto em áudio.</p>
+              <p><strong>[Narrador]</strong> IA e desigualdade digital. Ainda é um desafio. Apesar dos avanços, a inclusão digital ainda é um problema sério. Segundo dados da ONU, mais de 2,7 bilhões de pessoas no mundo ainda estão desconectadas da internet. Mas a IA, combinada com educação digital e infraestrutura acessível, tá sendo vista como uma das maiores aliadas pra mudar esse cenário nos próximos anos.</p>
+              <p><strong>[Narrador]</strong> E aqui vai uma dica para você que é dev, criador ou empreendedor. Se você desenvolve sites, apps ou qualquer solução digital, pense na acessibilidade desde o começo. Usar IA pra criar experiências mais inclusivas não é só responsabilidade social, é também uma oportunidade de alcançar muito mais pessoas. Aliás, se você quer criar seu próprio site, blog ou até uma plataforma acessível, a Hostinger te dá todas as ferramentas, hospedagem super rápida e suporte incrível. E olha, tem um desconto especial para quem acessar pelo link que está na descrição, hein? Mas é por tempo limitado, hein.</p>
+              <p><strong>[Narrador]</strong> Se esse vídeo fez sentido pra você, deixa aquele like, comenta aqui embaixo o que você acha sobre a IA na inclusão digital e compartilha com alguém que precisa saber disso. E se inscreve no canal, porque toda semana tem vídeo novo sobre IA, tecnologia e tendências que vão transformar o seu jeito de trabalhar e viver. A tecnologia só faz sentido se ela for pra todo mundo.</p>
             </div>
           </details>
         </article>
 
-        <!-- ÁREA DO PODCAST DESTACADA E ESTILIZADA -->
+        <!-- ÁREA DO PODCAST -->
         <article class="midia midia-podcast">
           <div class="podcast-badge">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/>
               <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/>
             </svg>
@@ -223,7 +229,7 @@
           </div>
 
           <div class="container-audio-podcast">
-            <audio controls class="reprodutor-midia reprodutor-podcast">
+            <audio controls class="reprodutor-midia reprodutor-podcast" aria-label="Podcast Empatia Digital - Episódio Muros e Pontes">
               <source src="./assets/Muros_e_Pontes.mp3" type="audio/mpeg">
               Seu navegador não suporta o elemento de áudio.
             </audio>
@@ -279,17 +285,16 @@
           <a href="#midias">Vozes</a>
         </div>
 
-        <!-- NOVA SEÇÃO DE DESENVOLVEDORES COM OS GITHUBS -->
         <div class="footer-links">
           <h3>Desenvolvedores</h3>
-          <a href="https://github.com/barpjoaogermano-byte" target="_blank" rel="noopener noreferrer" class="github-link">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <a href="https://github.com/barpjoaogermano-byte" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Perfil do GitHub de João Germano (abre em nova aba)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
             </svg>
             João Germano
           </a>
-          <a href="https://github.com/arturvalentim" target="_blank" rel="noopener noreferrer" class="github-link">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <a href="https://github.com/arturvalentim" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="Perfil do GitHub de Artur Valentim (abre em nova aba)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
             </svg>
             Artur Valentim
@@ -312,6 +317,20 @@
     </footer>
 
   </div>
+  
+  <div id="modal-qrcode" class="modal-container" aria-hidden="true" role="dialog" aria-labelledby="titulo-modal">
+    <div class="modal-overlay" tabindex="-1"></div>
+    <div class="modal-conteudo">
+      <button type="button" class="btn-fechar-modal" id="btn-fechar-qrcode" aria-label="Fechar QR Code">
+        &times;
+      </button>
+      <h3 id="titulo-modal">Acesse via QR Code</h3>
+      <div class="area-qrcode-img">
+        <img src="./assets/qr-code.png" alt="QR Code para acessar a página Ponte Digital">
+      </div>
+    </div>
+  </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
